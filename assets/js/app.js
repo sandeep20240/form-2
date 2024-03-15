@@ -1,27 +1,16 @@
+const button = document.getElementById("toogle-button")
+const Closebutton = document.getElementById("close-button")
+const Mobilemenu = document.getElementById("mobile-menu")
+const overlay = document.getElementById("overlay")
 
+button.addEventListener("click", function(){
 
-$('.center').slick({
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 3,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      }
-    ]
-  });
+    Mobilemenu.classList.toggle("hidden")
+})
+Closebutton.addEventListener("click", function(){
+    Mobilemenu.classList.toggle("hidden")
+})
+overlay.addEventListener("click", function(){
+
+    Mobilemenu.classList.toggle("hidden")
+})
