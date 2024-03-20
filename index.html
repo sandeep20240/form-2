@@ -12,6 +12,36 @@
         }
       }
     </style>
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script>
+       tailwind.config = {
+         theme: {
+           fontSize: {
+             xsm: "14px",
+             sm: "16px",
+             md: "20px",
+             lg: "24px",
+             "3xl": "32px",
+             "4xl": "40px",
+             "7xl": "72px",
+           },
+ 
+           extend: {
+             fontFamily: {
+               openSans: "Open Sans , sans-serif",
+               roboto: "roboto , sans-serif",
+             },
+             colors: {
+               primary: "#1C3407",
+               secondary: "#2F461B",
+               gray: "#BECAC6",
+               brown: "#84817C",
+               lightgray: "#F2E5DF",
+             },
+           },
+         },
+       };
+     </script>
     <title>Yoga 2</title>
   </head>
   <body>
@@ -899,36 +929,7 @@
     </footer>
 
     
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          fontSize: {
-            xsm: "14px",
-            sm: "16px",
-            md: "20px",
-            lg: "24px",
-            "3xl": "32px",
-            "4xl": "40px",
-            "7xl": "72px",
-          },
-
-          extend: {
-            fontFamily: {
-              openSans: "Open Sans , sans-serif",
-              roboto: "roboto , sans-serif",
-            },
-            colors: {
-              primary: "#1C3407",
-              secondary: "#2F461B",
-              gray: "#BECAC6",
-              brown: "#84817C",
-              lightgray: "#F2E5DF",
-            },
-          },
-        },
-      };
-    </script>
+   
 
     <script src="assets/js/app.js"></script>
   </body>
